@@ -1,0 +1,65 @@
+body {
+    height: auto;
+    margin: 0%;
+}
+
+header h1 {
+    background-color: crimson;
+    margin: 0%;
+    padding: 20px;
+    text-align: center;
+}
+
+#navigate {
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+}
+
+.menu {
+    margin: 0%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.menu li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.menu li {
+    padding: 10px;
+    display: inline-block;
+}
+
+.menu li:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    
+}
+
+.menu li:nth-child(2):hover #DD_1,.menu li:nth-child(3):hover #DD_2 {
+    display: block;
+}
+
+#DD_1, #DD_2 {
+    position: absolute;
+    width: auto;
+    max-width: 150px;
+    display: none;
+    top: 42.5px;
+    background-color: whitesmoke;
+    padding: 0px;
+}
+
+#DD_1 li, #DD_2 li {
+    display: block;
+}
+
+#DD_1 li:hover, #DD_2 li:hover {
+    background-color: aqua;
+}
+
+#DD_1 li a, #DD_2 li a {
+    color: steelblue;
+    font-size: 16px;
+}
